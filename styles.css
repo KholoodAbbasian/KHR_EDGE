@@ -1,8 +1,8 @@
 /* استایل برای صفحه */
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* سفید */
+    color: #000; /* مشکی */
     margin: 0;
     padding: 0;
 }
@@ -37,13 +37,19 @@ section p {
 /* فوتر */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     color: #000;
+    border-top: 2px solid #FFD700; /* طلایی */
 }
 
 footer p {
     font-size: 16px;
-    color: #gold;
-    font-weight: bold;
+    color: #000;
+    font-weight: normal;
+}
+
+footer p:last-child {
+    font-size: 14px;
+    color: #FFD700; /* رنگ طلایی */
 }
