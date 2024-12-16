@@ -1,48 +1,22 @@
-// تغییر زبان
-const translations = {
-    fa: {
-      about: "درباره ما",
-      about-text: "ما در KHR EDGE به ارائه بهترین خدمات منابع انسانی می‌پردازیم.",
-      services: "خدمات",
-      services-text: "خدمات ما شامل مشاوره، آموزش و توسعه سیستم‌های منابع انسانی است.",
-      contact: "تماس با ما",
-      name: "نام:",
-      email: "ایمیل:",
-      message: "پیام:",
-      submit: "ارسال"
-    },
-    ar: {
-      about: "من نحن",
-      about-text: "نحن في KHR EDGE نقدم أفضل خدمات الموارد البشرية.",
-      services: "الخدمات",
-      services-text: "تشمل خدماتنا الاستشارات والتدريب وتطوير أنظمة الموارد البشرية.",
-      contact: "اتصل بنا",
-      name: "الاسم:",
-      email: "البريد الإلكتروني:",
-      message: "الرسالة:",
-      submit: "إرسال"
-    },
-    en: {
-      about: "About Us",
-      about-text: "At KHR EDGE, we provide the best HR services.",
-      services: "Services",
-      services-text: "Our services include consulting, training, and HR systems development.",
-      contact: "Contact Us",
-      name: "Name:",
-      email: "Email:",
-      message: "Message:",
-      submit: "Submit"
-    }
-  };
+// JavaScript for changing language
+function changeLanguage(lang) {
+  document.documentElement.lang = lang;
   
-  document.getElementById("lang-switch").addEventListener("click", (event) => {
-    const lang = event.target.id;
-    if (translations[lang]) {
-      document.querySelectorAll(".lang").forEach((element) => {
-        const key = element.getAttribute("key");
-        element.textContent = translations[lang][key];
-      });
-      document.body.style.direction = lang === "en" ? "ltr" : "rtl";
-    }
-  });
-  
+  // Change text content based on selected language
+  if (lang === 'fa') {
+      document.querySelector('.home-link').textContent = 'خانه';
+      document.querySelector('.about-link').textContent = 'درباره ما';
+      document.querySelector('.services-link').textContent = 'خدمات';
+      document.querySelector('.contact-link').textContent = 'تماس';
+  } else if (lang === 'ar') {
+      document.querySelector('.home-link').textContent = 'الصفحة الرئيسية';
+      document.querySelector('.about-link').textContent = 'معلومات عنا';
+      document.querySelector('.services-link').textContent = 'الخدمات';
+      document.querySelector('.contact-link').textContent = 'اتصل';
+  } else {
+      document.querySelector('.home-link').textContent = 'Home';
+      document.querySelector('.about-link').textContent = 'About Us';
+      document.querySelector('.services-link').textContent = 'Services';
+      document.querySelector('.contact-link').textContent = 'Contact';
+  }
+}
