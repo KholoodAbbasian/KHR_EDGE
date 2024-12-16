@@ -1,59 +1,73 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KHR EDGE</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHR EDGE</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>KHR EDGE</h1>
-    <nav>
-      <ul>
-        <li><a href="#about" class="lang" key="about">درباره ما</a></li>
-        <li><a href="#services" class="lang" key="services">خدمات</a></li>
-        <li><a href="#contact" class="lang" key="contact">تماس با ما</a></li>
-      </ul>
-      <div id="lang-switch">
-        <button id="fa">فارسی</button>
-        <button id="ar">عربی</button>
-        <button id="en">English</button>
-      </div>
-    </nav>
-  </header>
 
-  <main>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="KHR EDGE Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="home-link">Home</a></li>
+                <li><a href="#about" class="about-link">About Us</a></li>
+                <li><a href="#services" class="services-link">Services</a></li>
+                <li><a href="#contact" class="contact-link">Contact</a></li>
+                <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                <li><a href="#" onclick="changeLanguage('fa')">فارسی</a></li>
+                <li><a href="#" onclick="changeLanguage('ar')">العربية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to KHR EDGE</h1>
+        <p>Human Resources Education and Data Science</p>
+    </section>
+
+    <!-- About Us Section -->
     <section id="about">
-      <h2 class="lang" key="about">درباره ما</h2>
-      <p class="lang" key="about-text">ما در KHR EDGE به ارائه بهترین خدمات منابع انسانی می‌پردازیم.</p>
+        <h2>About خلود عباسیان راد</h2>
+        <p>PhD in Higher Education Management and Planning</p>
+        <p>I specialize in human resources education and processes, applying data science methods for analysis and improvement.</p>
+        <p>Contact: 00989388118297 | Email: kholood.abbasian@gmail.com</p>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
-      <h2 class="lang" key="services">خدمات</h2>
-      <p class="lang" key="services-text">خدمات ما شامل مشاوره، آموزش و توسعه سیستم‌های منابع انسانی است.</p>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Human Resources Education</li>
+            <li>Data Science in HR</li>
+        </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-      <h2 class="lang" key="contact">تماس با ما</h2>
-      <form>
-        <label class="lang" key="name">نام:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label class="lang" key="email">ایمیل:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label class="lang" key="message">پیام:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit" class="lang" key="submit">ارسال</button>
-      </form>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2024 KHR EDGE - تمامی حقوق محفوظ است.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KHR EDGE</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
