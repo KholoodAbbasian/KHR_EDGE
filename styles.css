@@ -1,55 +1,115 @@
-/* استایل برای صفحه */
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #fff; /* سفید */
-    color: #000; /* مشکی */
+/* استایل پایه */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* هدر */
 header {
+    background-color: #000;
+    color: #FFD700;
+    padding: 40px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #fff;
 }
 
-h1 {
-    color: #000;
-    font-size: 36px;
-    margin: 0;
-    font-weight: bold;
-    text-transform: uppercase;
+header h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
     letter-spacing: 2px;
 }
 
-/* محتوای اصلی */
-main {
-    padding: 20px;
-    text-align: justify;
+header p {
+    font-size: 24px;
 }
 
-section p {
+/* بخش درباره پروژه */
+.about {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.about p {
     font-size: 18px;
-    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* بخش تماس */
+.contact {
+    padding: 40px 0;
+    background-color: #FFD700;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact ul li {
+    font-size: 18px;
+    color: #000;
+    margin: 10px 0;
 }
 
 /* فوتر */
 footer {
+    background-color: #000;
+    color: #FFD700;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    color: #000;
-    border-top: 2px solid #FFD700; /* طلایی */
 }
 
 footer p {
     font-size: 16px;
-    color: #000;
-    font-weight: normal;
 }
 
-footer p:last-child {
-    font-size: 14px;
-    color: #FFD700; /* رنگ طلایی */
+/* رسانه‌های اجتماعی (اختیاری) */
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    color: #FFD700;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    color: #fff;
 }
