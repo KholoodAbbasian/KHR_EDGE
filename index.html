@@ -15,11 +15,13 @@
             margin: 0;
             padding: 0;
         }
+        /* بخش خوشامدگویی */
         header {
             background: url("https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/images/hero.jpg") no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 0;
+            position: relative;
         }
         header h1 {
             font-size: 3rem;
@@ -27,10 +29,21 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        .greeting-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 80%;
+        }
         .greeting-container p {
             font-size: 1.2rem;
             margin: 10px 0;
+            font-weight: 600;
         }
+        
+        /* بخش پروفایل */
         .profile-container {
             display: flex;
             justify-content: space-around;
@@ -57,6 +70,8 @@
             color: #003366; /* آبی سلطنتی */
             font-size: 1.1rem;
         }
+
+        /* بخش تصاویر */
         .images-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -82,6 +97,7 @@
             font-size: 1.1rem;
             font-weight: bold;
         }
+
         footer {
             background-color: #003366; /* آبی سلطنتی */
             color: white;
@@ -96,8 +112,8 @@
 <body>
 
 <header>
-    <h1>خوش آمدید به KHR EDGE</h1>
     <div class="greeting-container">
+        <h1>خوش آمدید به KHR EDGE</h1>
         <p>در اینجا ما به آموزش و تحلیل منابع انسانی با استفاده از دیتا ساینس پرداخته‌ایم. به سایت ما خوش آمدید!</p>
     </div>
 </header>
