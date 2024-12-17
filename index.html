@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
     <!-- هدر سایت -->
     <header>
         <nav>
@@ -16,7 +15,7 @@
                 <li><a href="#home">خانه</a></li>
                 <li><a href="#about">درباره ما</a></li>
                 <li><a href="#services">خدمات</a></li>
-                <li><a href="#ai-analysis">تجزیه و تحلیل</a></li>
+                <li><a href="#analysis">تجزیه و تحلیل</a></li>
                 <li><a href="#contact">تماس با ما</a></li>
             </ul>
         </nav>
@@ -32,57 +31,48 @@
 
     <!-- بخش درباره ما -->
     <section id="about" class="section">
-        <div class="content">
-            <h2>درباره خلود عباسیان راد</h2>
-            <p>دکتری مدیریت و برنامه‌ریزی آموزش عالی</p>
-            <p>ما با استفاده از تکنولوژی هوش مصنوعی و داده‌کاوی، خدمات نوینی در تحلیل فرآیندهای منابع انسانی ارائه می‌دهیم.</p>
-            <p>تلفن تماس: 00989388118297 | ایمیل: kholood.abbasian@gmail.com</p>
-        </div>
+        <h2>درباره ما</h2>
+        <p>خلود عباسیان راد - دکتری مدیریت و برنامه‌ریزی آموزش عالی</p>
+        <p>ما خدمات آموزشی و تحلیل داده‌های منابع انسانی را با استفاده از فناوری‌های نوین ارائه می‌دهیم.</p>
+        <p>تلفن: 00989388118297 | ایمیل: kholood.abbasian@gmail.com</p>
     </section>
 
     <!-- بخش خدمات -->
     <section id="services" class="section">
-        <div class="content">
-            <h2>خدمات ما</h2>
-            <ul>
-                <li>آموزش منابع انسانی</li>
-                <li>تحلیل داده‌ها در فرآیندهای منابع انسانی</li>
-                <li>مشاوره بهینه‌سازی منابع انسانی</li>
-            </ul>
-        </div>
+        <h2>خدمات ما</h2>
+        <ul>
+            <li>آموزش منابع انسانی</li>
+            <li>تحلیل داده‌های فرآیندهای منابع انسانی</li>
+            <li>مشاوره بهینه‌سازی منابع انسانی</li>
+        </ul>
     </section>
 
-    <!-- بخش تجزیه و تحلیل با AI -->
-    <section id="ai-analysis" class="section">
-        <div class="content">
-            <h2>تجزیه و تحلیل داده‌ها با هوش مصنوعی</h2>
-            <p>ما از الگوریتم‌های پیشرفته هوش مصنوعی برای تحلیل و پیش‌بینی عملکرد کارکنان استفاده می‌کنیم.</p>
-            <canvas id="performanceChart" width="400" height="200"></canvas>
-        </div>
+    <!-- بخش تجزیه و تحلیل -->
+    <section id="analysis" class="section">
+        <h2>تجزیه و تحلیل داده‌ها با هوش مصنوعی</h2>
+        <canvas id="analysisChart" width="400" height="200"></canvas>
     </section>
 
-    <!-- بخش تماس -->
+    <!-- بخش تماس با ما -->
     <section id="contact" class="section">
-        <div class="content">
-            <h2>تماس با ما</h2>
-            <form>
-                <label for="name">نام:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">ایمیل:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">پیام:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">ارسال</button>
-            </form>
-        </div>
+        <h2>تماس با ما</h2>
+        <form>
+            <label for="name">نام:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">ایمیل:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">پیام:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">ارسال پیام</button>
+        </form>
     </section>
 
-    <!-- فوتر -->
+    <!-- فوتر سایت -->
     <footer>
         <p>&copy; 2024 KHR EDGE | تمامی حقوق محفوظ است.</p>
     </footer>
 
-    <!-- اسکریپت -->
+    <!-- جاوااسکریپت -->
     <script src="scripts.js"></script>
 </body>
 </html>
