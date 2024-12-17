@@ -1,137 +1,74 @@
-/* استایل پایه */
-* {
+/* استایل‌های کلی */
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    text-align: right;
 }
 
-body {
-    background-color: #fff;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* کانتینر عمومی */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* هدر */
 header {
-    background-color: #001f3d; /* رنگ سرمه‌ای */
-    color: #FFD700; /* طلایی */
-    padding: 40px 0;
-    text-align: center;
-    border-bottom: 5px solid #FFD700;
-}
-
-header h1 {
-    font-size: 48px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 24px;
+    background-color: #000;
+    color: gold;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul {
-    list-style-type: none;
-    margin-top: 20px;
+    list-style: none;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 header nav ul li a {
+    color: gold;
     text-decoration: none;
-    color: #FFD700;
-    font-size: 20px;
 }
 
-header nav ul li a:hover {
-    color: #fff;
+section {
+    padding: 40px;
 }
 
-/* بخش درباره پروژه */
-.about {
-    background-color: #f8f8f8;
-    padding: 40px 0;
+footer {
     text-align: center;
+    background-color: #000;
+    color: gold;
+    padding: 10px;
 }
 
-.about h2 {
-    font-size: 36px;
-    color: #001f3d; /* سرمه‌ای */
-    margin-bottom: 20px;
+h1, h2 {
+    color: navy;
 }
 
-.about p {
-    font-size: 18px;
-    max-width: 900px;
-    margin: 0 auto;
-    color: #333;
-}
-
-/* بخش تماس */
-.contact {
-    background-color: #FFD700; /* طلایی */
-    padding: 40px 0;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 36px;
-    color: #001f3d; /* سرمه‌ای */
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 18px;
-    color: #001f3d; /* سرمه‌ای */
-    margin-bottom: 20px;
-}
-
-.contact ul {
-    list-style-type: none;
-}
-
-.contact ul li {
-    font-size: 18px;
-    color: #001f3d; /* سرمه‌ای */
+/* فرم تماس */
+form label, form input, form textarea {
+    display: block;
     margin: 10px 0;
 }
 
-/* فوتر */
-footer {
-    background-color: #001f3d; /* سرمه‌ای */
-    color: #FFD700; /* طلایی */
-    padding: 20px 0;
-    text-align: center;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-footer p {
-    font-size: 16px;
+button {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* رسانه‌های اجتماعی (اختیاری) */
-footer .social {
-    margin-top: 10px;
-}
-
-footer .social a {
-    color: #FFD700;
-    font-size: 24px;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-footer .social a:hover {
-    color: #fff;
+canvas {
+    margin-top: 20px;
 }
