@@ -3,51 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تجزیه و تحلیل فرآیند منابع انسانی با استفاده از داده‌های هوش مصنوعی</title>
+    <title>KHR EDGE</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- اضافه کردن کتابخانه Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- هدر -->
+
+    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>تجزیه و تحلیل فرآیند منابع انسانی</h1>
-            <p>با استفاده از داده‌های هوش مصنوعی</p>
-            <nav>
-                <ul>
-                    <li><a href="#" lang="fa">فارسی</a></li>
-                    <li><a href="#" lang="en">English</a></li>
-                    <li><a href="#" lang="ar">عربي</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="لوگوی KHR EDGE">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#services">خدمات</a></li>
+                <li><a href="#ai-analysis">تجزیه و تحلیل</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- بخش درباره ما -->
-    <section class="about">
-        <div class="container">
-            <h2>درباره پروژه</h2>
-            <p>این وب‌سایت به تجزیه و تحلیل فرآیندهای منابع انسانی با استفاده از داده‌های هوش مصنوعی و تکنولوژی‌های نوین پرداخته است. هدف ما کمک به تصمیم‌گیری‌های دقیق‌تر و بهبود کارایی در فرآیندهای منابع انسانی است.</p>
-        </div>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>به KHR EDGE خوش آمدید</h1>
+        <p>آموزش و فرآیندهای منابع انسانی با استفاده از تجزیه و تحلیل داده‌ها و هوش مصنوعی</p>
     </section>
 
-    <!-- بخش تماس -->
-    <section class="contact">
-        <div class="container">
-            <h2>تماس با من</h2>
-            <p>برای ارتباط با من از روش‌های زیر استفاده کنید:</p>
-            <ul>
-                <li><strong>شماره تماس:</strong> 00989388118297</li>
-                <li><strong>ایمیل:</strong> kholood.abbasian@gmail.com</li>
-            </ul>
-        </div>
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>درباره خلود عباسیان راد</h2>
+        <p>دکتری مدیریت و برنامه‌ریزی آموزش عالی</p>
+        <p>ما با استفاده از روش‌های نوین داده‌کاوی و هوش مصنوعی، فرآیندهای منابع انسانی را تجزیه و تحلیل می‌کنیم.</p>
+        <p>تلفن تماس: 00989388118297 | ایمیل: kholood.abbasian@gmail.com</p>
     </section>
 
-    <!-- فوتر -->
+    <!-- Services Section -->
+    <section id="services">
+        <h2>خدمات ما</h2>
+        <ul>
+            <li>آموزش منابع انسانی</li>
+            <li>تحلیل داده‌ها در فرآیندهای منابع انسانی</li>
+        </ul>
+    </section>
+
+    <!-- AI Analysis Section -->
+    <section id="ai-analysis">
+        <h2>تجزیه و تحلیل داده‌ها با هوش مصنوعی</h2>
+        <p>ما از الگوریتم‌های هوش مصنوعی برای پیش‌بینی و تحلیل عملکرد کارکنان استفاده می‌کنیم.</p>
+        <canvas id="performanceChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <form>
+            <label for="name">نام:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">ایمیل:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">پیام:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">ارسال</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 خلود عباسیان راد. تمامی حقوق محفوظ است.</p>
-        </div>
+        <p>&copy; 2024 KHR EDGE | تمامی حقوق محفوظ است.</p>
     </footer>
+
+    <!-- اسکریپت برای نمودار -->
+    <script src="scripts.js"></script>
 </body>
 </html>
