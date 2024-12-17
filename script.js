@@ -7,14 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
             labels: ['فصل اول', 'فصل دوم', 'فصل سوم', 'فصل چهارم'],
             datasets: [{
                 label: 'عملکرد کارکنان',
-                data: [20, 35, 30, 50],
-                backgroundColor: [
-                    'rgba(54, 162, 235, 0.7)',
-                    'rgba(255, 206, 86, 0.7)',
-                    'rgba(75, 192, 192, 0.7)',
-                    'rgba(153, 102, 255, 0.7)'
-                ],
-                borderColor: 'rgba(0, 0, 0, 1)',
+                data: [25, 40, 35, 50],
+                backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
         },
