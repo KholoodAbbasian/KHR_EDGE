@@ -5,44 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KHR EDGE</title>
     <style>
+        /* تنظیمات کلی صفحه */
         body {
             font-family: Arial, sans-serif;
             background-color: #fff;
             color: #333;
             margin: 0;
             padding: 0;
+            direction: rtl; /* برای نوشتار راست به چپ */
         }
+
+        /* سرصفحه سایت */
         header {
-            background-color: #000;
+            background-color: #001f3d; /* رنگ سرمه‌ای */
+            color: #FFD700; /* رنگ طلایی */
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* استایل برای معرفی و خدمات */
+        section.introduction {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        section.introduction h2 {
+            font-size: 28px;
+            color: #001f3d;
+        }
+
+        section.introduction p {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* تنظیمات بخش تصاویر */
+        .images-container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-box {
+            width: 30%;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .image-box p {
+            background-color: #001f3d;
+            color: #FFD700;
+            padding: 10px;
+            margin: 0;
+        }
+
+        /* خدمات */
+        section.services {
+            background-color: #001f3d;
+            color: #FFD700;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section.services h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        section.services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section.services li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        section.services li:before {
+            content: "✔️";
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #001f3d;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .images-container {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px 0;
-        }
-        .image-box {
-            width: 30%;
-            text-align: center;
-        }
-        .image-box img {
-            border: 2px solid #000;
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
+
+    <!-- سرصفحه -->
     <header>
         <h1>خوش آمدید به سایت KHR EDGE</h1>
         <p>آموزش و فرآیند منابع انسانی با استفاده از هوش مصنوعی</p>
     </header>
 
+    <!-- معرفی سایت -->
+    <section class="introduction">
+        <h2>معرفی سایت</h2>
+        <p>سایت KHR EDGE به بررسی و تجزیه و تحلیل فرآیندهای منابع انسانی با استفاده از هوش مصنوعی پرداخته و راهکارهای نوآورانه‌ای را برای بهبود عملکرد و کارایی در سازمان‌ها ارائه می‌دهد.</p>
+    </section>
+
+    <!-- نمایش تصاویر -->
     <section class="images-container">
         <div class="image-box">
             <img src="https://github.com/KholoodAbbasian/KHR_EDGE/raw/main/images/hero.jpg" alt="تصویر معرفی سایت">
@@ -65,6 +163,22 @@
             <p>تصویر 5: آموزش منابع انسانی</p>
         </div>
     </section>
+
+    <!-- خدمات -->
+    <section class="services">
+        <h2>خدمات ما</h2>
+        <ul>
+            <li>تحلیل داده‌ها و پیش‌بینی روندهای منابع انسانی با استفاده از هوش مصنوعی</li>
+            <li>آموزش کارکنان در زمینه‌های مختلف منابع انسانی</li>
+            <li>مشاوره به سازمان‌ها برای بهینه‌سازی فرآیندهای منابع انسانی</li>
+            <li>تجزیه و تحلیل عملکرد منابع انسانی در سازمان‌ها</li>
+        </ul>
+    </section>
+
+    <!-- پاورقی -->
+    <footer>
+        <p>تمامی حقوق محفوظ است | KHR EDGE | تماس با ما: kholood.abbasian@gmail.com | تلفن: 00989388118297</p>
+    </footer>
 
 </body>
 </html>
