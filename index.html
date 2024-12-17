@@ -15,6 +15,8 @@
             margin: 0;
             padding: 0;
             color: #333;
+            direction: rtl; /* نمایش راست‌چین */
+            text-align: right;
         }
         /* سربرگ */
         header {
@@ -24,6 +26,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        header img {
+            width: 80px; /* اندازه لوگو */
+            height: auto;
         }
         nav a {
             color: #fff;
@@ -95,7 +101,7 @@
 <body>
     <!-- سربرگ -->
     <header>
-        <h1>KHR EDGE</h1>
+        <img src="https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/logo.png" alt="لوگو سایت">
         <nav>
             <a href="#">خانه</a>
             <a href="#">معرفی</a>
