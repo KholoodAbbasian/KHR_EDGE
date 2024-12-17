@@ -1,22 +1,30 @@
-// JavaScript for changing language
-function changeLanguage(lang) {
-  document.documentElement.lang = lang;
-  
-  // Change text content based on selected language
-  if (lang === 'fa') {
-      document.querySelector('.home-link').textContent = 'خانه';
-      document.querySelector('.about-link').textContent = 'درباره ما';
-      document.querySelector('.services-link').textContent = 'خدمات';
-      document.querySelector('.contact-link').textContent = 'تماس';
-  } else if (lang === 'ar') {
-      document.querySelector('.home-link').textContent = 'الصفحة الرئيسية';
-      document.querySelector('.about-link').textContent = 'معلومات عنا';
-      document.querySelector('.services-link').textContent = 'الخدمات';
-      document.querySelector('.contact-link').textContent = 'اتصل';
-  } else {
-      document.querySelector('.home-link').textContent = 'Home';
-      document.querySelector('.about-link').textContent = 'About Us';
-      document.querySelector('.services-link').textContent = 'Services';
-      document.querySelector('.contact-link').textContent = 'Contact';
-  }
-}
+// نمودار عملکرد کارکنان
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('performanceChart').getContext('2d');
+    const performanceChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['فصل اول', 'فصل دوم', 'فصل سوم', 'فصل چهارم'],
+            datasets: [{
+                label: 'عملکرد کارکنان',
+                data: [20, 35, 30, 50],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)'
+                ],
+                borderColor: 'rgba(0, 0, 0, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+});
