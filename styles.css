@@ -1,4 +1,4 @@
-/* تنظیمات کلی */
+/* استایل کلی */
 body {
     margin: 0;
     padding: 0;
@@ -20,7 +20,6 @@ header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
 }
 
 header nav ul li {
@@ -33,6 +32,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
+/* بخش خانه */
 .hero {
     background-color: navy;
     color: #fff;
@@ -40,46 +40,51 @@ header nav ul li a {
     padding: 50px 10px;
 }
 
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* درباره ما */
 .section {
     padding: 40px 10px;
     text-align: center;
 }
 
-.section h2 {
-    color: navy;
-    margin-bottom: 20px;
+.profile-img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* خدمات */
+.service {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
 }
 
-ul li {
-    margin-bottom: 10px;
+.service img {
+    width: 80px;
+    height: 80px;
 }
 
+.service p {
+    margin-top: 10px;
+}
+
+/* فرم */
 form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 button {
     background-color: gold;
     color: #000;
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
-    font-size: 16px;
-}
-
-footer {
-    background-color: #000;
-    color: gold;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
 }
