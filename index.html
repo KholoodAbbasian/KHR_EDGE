@@ -3,160 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHR EDGE</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>KHR EDGE | خدمات منابع انسانی</title>
     <style>
+        /* فونت فارسی */
+        @font-face {
+            font-family: 'Shabnam';
+            src: url('https://cdn.fontiran.com/Shabnam.eot');
+        }
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Shabnam', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #000;
+            color: #333;
         }
-
-        /* بخش خوشامدگویی */
+        /* سربرگ */
         header {
-            background: url("https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/images/hero.jpg") no-repeat center center/cover;
-            height: 100vh;
+            background: #1f3b4d;
+            color: #fff;
+            padding: 1rem 2rem;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* قرار دادن متن بالا */
-            position: relative;
-            padding: 0 20px;
-        }
-
-        header .welcome-text {
-            text-align: right;
-            color: white;
-            font-size: 2rem; /* اندازه کمتر */
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 500;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            margin-top: 30px; /* بالا بردن متن */
-            padding: 10px;
-        }
-
-        header .sub-text {
-            font-size: 1.2rem; /* اندازه کمتر */
-            margin-top: 10px;
-            font-weight: 600;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-
-        /* بخش پروفایل */
-        .profile-container {
-            display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            padding: 50px 20px;
-            background-color: #f9f9f9;
         }
-
-        .profile-container img {
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size: 1.1rem;
+        }
+        /* بخش خوشامدگویی */
+        .hero {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: #fff;
+            padding: 2rem;
+        }
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 2.5rem;
+            color: #DAA520; /* طلایی کلاسیک */
+        }
+        /* معرفی */
+        .about {
+            padding: 2rem;
+            text-align: center;
+        }
+        .about img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-right: 30px;
+            margin-bottom: 1rem;
         }
-
-        .profile-container div {
-            flex: 1;
+        /* خدمات */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background: #f9f9f9;
         }
-
-        .profile-container h2 {
-            color: #003366;
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        .profile-container p {
-            color: #003366;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        /* بخش تصاویر */
-        .images-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .image-box {
+        .service {
             text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            width: 30%;
         }
-
-        .image-box img {
-            width: 100%;
-            height: auto;
-            max-width: 250px;
-            margin-bottom: 15px;
+        .service h3 {
+            color: #1f3b4d;
         }
-
-        .image-box p {
-            color: #DAA520; /* طلایی کلاسیک */
-            font-size: 1.1rem;
-            font-weight: bold;
+        /* تماس */
+        .contact {
+            padding: 2rem;
+            background: #1f3b4d;
+            color: #fff;
+            text-align: center;
         }
-
         footer {
-            background-color: #003366; /* آبی سلطنتی */
-            color: white;
-            padding: 20px;
+            background: #333;
+            color: #fff;
             text-align: center;
-        }
-
-        footer p {
-            font-size: 1.2rem;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
+    <!-- سربرگ -->
+    <header>
+        <h1>KHR EDGE</h1>
+        <nav>
+            <a href="#">خانه</a>
+            <a href="#">معرفی</a>
+            <a href="#">خدمات</a>
+            <a href="#">مقالات</a>
+            <a href="#">تماس</a>
+        </nav>
+    </header>
 
-<header>
-    <div class="welcome-text">
-        <h1>خوش آمدید به KHR EDGE</h1>
-        <p class="sub-text">در اینجا ما به آموزش و تحلیل منابع انسانی با استفاده از دیتا ساینس پرداخته‌ایم. به سایت ما خوش آمدید!</p>
-    </div>
-</header>
+    <!-- خوشامدگویی -->
+    <section class="hero">
+        <h1>به KHR EDGE خوش آمدید</h1>
+    </section>
 
-<!-- بخش پروفایل -->
-<div class="profile-container">
-    <img src="https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/images/profile.jpg" alt="Profile Image">
-    <div>
+    <!-- معرفی -->
+    <section class="about">
+        <img src="images/profile.jpg" alt="پروفایل">
         <h2>خلود عباسیان راد</h2>
-        <p>دکتری مدیریت و برنامه‌ریزی آموزش عالی</p>
-        <p>استاد دانشگاه و متخصص در حوزه منابع انسانی و دیتا ساینس</p>
-    </div>
-</div>
+        <p>دکتری مدیریت و برنامه‌ریزی آموزش عالی | استاد دانشگاه | مشاور منابع انسانی</p>
+    </section>
 
-<!-- بخش تصاویر -->
-<div class="images-container">
-    <div class="image-box">
-        <img src="https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/images/analysis.png" alt="Analysis">
-        <p>تحلیل داده‌ها با هوش مصنوعی</p>
-    </div>
-    <div class="image-box">
-        <img src="https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/images/consulting.png" alt="Consulting">
-        <p>مشاوره و خدمات</p>
-    </div>
-    <div class="image-box">
-        <img src="https://raw.githubusercontent.com/KholoodAbbasian/KHR_EDGE/main/images/training.png" alt="Training">
-        <p>دوره‌های آموزشی</p>
-    </div>
-</div>
+    <!-- خدمات -->
+    <section class="services">
+        <div class="service">
+            <h3>تحلیل منابع انسانی</h3>
+            <p>ارائه راهکارهای علمی و داده‌محور برای تحلیل عملکرد سازمان‌ها.</p>
+        </div>
+        <div class="service">
+            <h3>آموزش فرآیندهای HR</h3>
+            <p>آموزش استانداردهای روز دنیا برای ارتقاء مهارت‌های منابع انسانی.</p>
+        </div>
+        <div class="service">
+            <h3>مشاوره تخصصی</h3>
+            <p>مشاوره پیاده‌سازی سیستم‌های هوشمند منابع انسانی در سازمان‌ها.</p>
+        </div>
+    </section>
 
-<footer>
-    <p>تماس با ما: 00989388118297 | ایمیل: kholood.abbasian@gmail.com</p>
-</footer>
+    <!-- تماس -->
+    <section class="contact">
+        <h2>تماس با ما</h2>
+        <p>ایمیل: kholood.abbasian@gmail.com | تلفن: 00989388118297</p>
+    </section>
 
+    <!-- فوتر -->
+    <footer>
+        <p>تمامی حقوق محفوظ است &copy; 2024 KHR EDGE</p>
+    </footer>
 </body>
 </html>
